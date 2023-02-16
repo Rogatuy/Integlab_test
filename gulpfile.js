@@ -129,7 +129,7 @@ exports.html = html;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: "build"
+      baseDir: "public"
     },
     cors: true,
     notify: false,
