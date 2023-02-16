@@ -1,0 +1,126 @@
+.tours-slider__wrapper {
+  width: 266px;
+  margin-top: 20px;
+}
+
+@media (min-width: @desktop-width) {
+  .tours-slider__wrapper {
+    width: 1184px;
+    margin-left: 30px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: start;
+  }
+}
+
+.tours-slider__slide {
+  display: flex;
+  flex-direction: column;
+  width: 266px;
+  justify-content: center;
+  position: relative;
+}
+
+@media (min-width: @desktop-width) {
+  .tours-slider__slide {
+    width: 313px;
+  }
+}
+
+.tours-slider__link {
+  text-decoration: none;
+}
+
+.tours-slider__link:visited,
+.tours-slider__link:hover,
+.tours-slider__link:active {
+  color: @dark;
+}
+
+@media (min-width: @desktop-width) {
+  .tours-slider__link:hover img {
+    transform: scale(1.1);
+  }
+}
+
+.tours-slider__arrow-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.tours-slider__like {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  top: 8px;
+  left: 213px;
+  z-index: 2;
+}
+
+@media (min-width: @desktop-width) {
+  .tours-slider__like {
+    left: 262px;
+  }
+}
+
+.tours-slider__like:hover circle {
+  fill: @red;
+  stroke: @red;
+}
+
+.tours-slider__like:hover path {
+  stroke: @white;
+}
+
+.tours-slider__like--isLike circle {
+  fill: none;
+  stroke: none;
+}
+
+.tours-slider__like--isLike path {
+  fill: @red;
+}
+
+.tours-slider__image img {
+  width: 266px;
+}
+
+@media (min-width: @desktop-width) {
+  .tours-slider__image img {
+    width: 313px;
+    transition: transform 0.25s;
+  }
+}
+
+.tours-slider__header {
+  font-family: "Ubuntu-Medium", sans-serif;
+  width: 266px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+
+@media (min-width: @desktop-width) {
+  .tours-slider__header {
+    width: 313px;
+    font-size: 32px;
+    line-height: 38px;
+    margin-top: 20px;
+  }
+}
+
+.tours-slider__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  width: 266px;
+}
+
+@media (min-width: @desktop-width) {
+  .tours-slider__description {
+    width: 313px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}

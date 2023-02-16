@@ -1,0 +1,83 @@
+.main-tour__info {
+  width: 335px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: @desktop-width) {
+  .main-tour__info {
+    width: 1184px;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 61px;
+  }
+}
+
+.main-tour__heading {
+  font-family: "Ubuntu-Medium", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  margin-top: 37px;
+  margin-bottom: 40px;
+}
+
+@media (min-width: @desktop-width) {
+  .main-tour__heading {
+    font-size: 40px;
+    line-height: 46px;
+    margin-top: 8px;
+  }
+}
+
+.main-tour__open-form {
+  font-size: 16px;
+  line-height: 22px;
+  color: @white;
+  background-color: @light-blue;
+  border: none;
+  padding: 21px 132px;
+  margin-bottom: 40px;
+}
+
+.main-tour__open-form:hover {
+  background-color: @dark-blue;
+}
+
+@media (min-width: @desktop-width) {
+  .main-tour__open-form {
+    width: 354px;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-tour__description {
+    padding-top: 24px;
+  }
+}
+
+.main-tour__description p {
+  margin: 0;
+  margin-bottom: 16px;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+@media (min-width: @desktop-width) {
+  .main-tour__description p {
+    margin-bottom: 24px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.main-tour__new-string {
+  display: none;
+}
+
+@media (min-width: @desktop-width) {
+  .main-tour__new-string {
+    display: inline;
+  }
+}

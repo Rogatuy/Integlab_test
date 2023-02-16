@@ -1,0 +1,360 @@
+.popup {
+  display: none;
+}
+
+.popup.active {
+  display: block;
+}
+
+.popup__background {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: @dark-light-opacity;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.popup__background.active {
+  opacity: 1;
+  pointer-events: all;
+  z-index: 2;
+}
+
+.popup__form {
+  position: absolute;
+  top: 854px;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background: @white;
+  width: 375px;
+  min-height: 1390px;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+@media (min-width: @desktop-width) {
+  .popup__form {
+    top: 648px;
+    width: 1184px;
+    min-height: 944px;
+  }
+}
+
+.popup__form.active {
+  transform: translate(-50%, -50%) scale(1);
+  z-index: 2;
+}
+
+.popup__form-wrapper {
+  position: relative;
+  padding: 0 20px;
+  width: 335px;
+}
+
+@media (min-width: @desktop-width) {
+  .popup__form-wrapper {
+    width: 1104px;
+    padding: 0 40px;
+  }
+}
+
+.popup__header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 23px;
+}
+
+.popup__header {
+  font-family: "Ubuntu-Medium", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  margin-top: 37px;
+}
+
+@media (min-width: @desktop-width) {
+  .popup__header {
+    font-size: 32px;
+    line-height: 38px;
+    margin-top: 55px;
+  }
+}
+
+
+.popup__close-button {
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  margin-top: 30px;
+  padding: 0;
+}
+
+.popup__close-button:active circle {
+  fill: @light-blue;
+}
+
+.popup__close-button:active path {
+  stroke: @white;
+}
+
+@media (min-width: @desktop-width) {
+  .popup__close-button:hover circle {
+    fill: @light-blue;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .popup__close-button:hover path {
+    stroke: @white;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .popup__inputs-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+}
+
+.popup__label {
+  color: @dark-opacity;
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 18px;
+}
+
+@media (min-width: @desktop-width) {
+  .popup__label {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 18px;
+  }
+}
+
+.popup__input {
+  width: 335px;
+  height: 64px;
+  border: 1px solid @light-grey;
+  margin-bottom: 21px;
+  padding-left: 25px;
+  box-sizing: border-box;
+}
+
+@media (min-width: @desktop-width) {
+  .popup__input {
+    width: 536px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+.popup__input::-webkit-input-placeholder { /* WebKit browsers */
+  color: @dark-light-opacity;
+}
+
+.popup__input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: @dark-light-opacity;
+}
+
+.popup__input::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: @dark-light-opacity;
+}
+
+.popup__input:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: @dark-light-opacity;
+}
+
+label .popup__input:hover,
+label .popup__input:focus,
+label .popup__input:active {
+  border: 1px solid @light-blue;
+  box-shadow: none;
+  outline: none;
+}
+
+.popup__radio-btn {
+  display: inline-block;
+}
+
+@media (min-width: @desktop-width) {
+  .popup__radio-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .popup__radio-btn {
+    margin-top: 26px;
+  }
+}
+
+.popup__radio-btn input {
+  display: none;
+}
+
+.popup__radio-btn label {
+  display: inline-block;
+  cursor: pointer;
+  padding: 21px 64px;
+  margin: 12px 0;
+  font-size: 14px;
+  line-height: 22px;
+  border: 1px solid @light-grey;
+  color: @dark-opacity;
+  box-sizing: border-box;
+}
+
+@media (min-width: @desktop-width) {
+  .popup__radio-btn label {
+    padding: 21px 64px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+.popup__radio-btn input:checked + label {
+  background: @light-blue;
+  color: @white;
+}
+
+.popup__radio-btn label:hover {
+  color: @dark;
+  border-color: @light-blue;
+}
+
+.popup__question-header {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 22px;
+  color: @dark-opacity;
+}
+
+@media (min-width: @desktop-width) {
+  .popup__question-header {
+    margin-top: 50px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+.popup__question-input {
+  width: 335px;
+  padding: 21px 24px;
+  border: 1px solid @light-grey;
+  min-height: 128px;
+  box-sizing: border-box;
+  font-family: "Ubuntu-Regular", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  resize: none;
+}
+
+@media (min-width: @desktop-width) {
+  .popup__question-input {
+    font-size: 16px;
+    line-height: 22px;
+    width: 100%;
+  }
+}
+
+.popup__access {
+  margin: 33px 0 35px 0;
+  user-select: none;
+  position: relative;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: @desktop-width) {
+  .popup__access {
+    margin-top: 54px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.popup__access-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.popup__access label {
+  font-family: "Ubuntu-Regular", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  color: @dark-opacity;
+  margin-left: 48px;
+  padding: 20px 0;
+}
+
+@media (min-width: @desktop-width) {
+  .popup__access label {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+.popup__access-checkbox + label {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+  padding: 0;
+}
+
+.popup__access-checkbox + label::before {
+  content: "";
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: 0;
+  top: 5px;
+  background-image: url("../../img/checkbox.svg");
+}
+
+@media (min-width: @desktop-width) {
+  .popup__access-checkbox + label::before {
+    top: 25px;
+  }
+}
+
+.popup__access-checkbox:hover + label::before,
+.popup__access-checkbox:checked + label::before {
+  background-image: url("../../img/checkbox_access.svg");
+}
+
+.popup__button-submit {
+  width: 335px;
+  padding: 21px 0;
+  text-align: center;
+  background-color: @light-blue;
+  color: @white;
+  font-size: 16px;
+  line-height: 22px;
+  border: none;
+  margin-top: 42px;
+}
+
+@media (min-width: @desktop-width) {
+  .popup__button-submit {
+    width: 321px;
+  }
+}
+
+.popup__button-submit:hover {
+  background-color: @dark-blue;
+}

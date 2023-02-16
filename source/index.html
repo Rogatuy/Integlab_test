@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Integlab_test</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="css/style.min.css" as="style">
+    <link rel="preload" href="fonts/ubuntu-medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ubuntu-medium.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ubuntu-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ubuntu-regular.woff" as="font" type="font/woff" crossorigin="anonymous">
+  </head>
+  <body class="page__body">
+    <main class="page-tour">
+      <h1 class="visually-hidden">Old Tallin</h1>
+      <section class="page-tour__wrapper">
+        <section class="main-tour">
+          <section class="main-tour__picture picture">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/old-tallin-main-desktop.png">
+              <img class="picture__little" src="img/old-tallin-main-mobile.png" alt="Old tallin">
+            </picture>
+          </section>
+          <section class="main-tour__info">
+            <h2 class="main-tour__heading">Walking in Old Tallinn</h2>
+            <button class="main-tour__open-form">Feedback</button>
+            <section class="popup">
+              <div class="popup__background"></div>
+              <form class="popup__form">
+                <div class="popup__form-wrapper">
+                  <div class="popup__header-wrapper">
+                    <h3 class="popup__header">Feedback</h3>
+                    <button class="popup__close-button" type="button">
+                      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="20" cy="20" r="19.5" transform="rotate(90 20 20)" stroke="#659DBD"/>
+                        <path d="M27 13L13 27M13 13L27 27" stroke="#659DBD" stroke-linecap="round"/>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="popup__inputs-wrapper">
+                    <label>
+                      <div class="popup__label">
+                        Your name
+                      </div>
+                      <input class="popup__input" type="text" name="name" placeholder="Placeholder">
+                    </label>
+                    <label>
+                      <div class="popup__label">
+                        Email address
+                      </div>
+                      <input class="popup__input" type="email" name="email" placeholder="Placeholder">
+                    </label>
+                    <label>
+                      <div class="popup__label">
+                        Your phone
+                      </div>
+                      <input class="popup__input" type="tel" name="tel" placeholder="Placeholder">
+                    </label>
+                    <label>
+                      <div class="popup__label">
+                        Choose a trip
+                      </div>
+                      <div class="popup__select select" data-state="">
+                        <div class="select__title" data-default="Choose">
+                          Choose
+                        </div>
+                        <div class="select__content">
+                          <input id="selectName0" class="select__input" type="radio" name="selectName" value="0" />
+                          <label for="selectName0" class="select__label">Walking in Old Tallinn</label>
+                          <input id="selectName1" class="select__input" type="radio" name="selectName" value="1"/>
+                          <label for="selectName1" class="select__label">St. Isaac's Cathedral</label>
+                          <input id="selectName2" class="select__input" type="radio" name="selectName" value="2"/>
+                          <label for="selectName2" class="select__label">The Bridge of Peace</label>
+                          <input id="selectName3" class="select__input" type="radio" name="selectName" value="3"/>
+                          <label for="selectName3" class="select__label">El Caminito del Rey</label>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="popup__radio-wrapper">
+                    <div class="popup__radio-btn">
+                      <input id="radio-1" type="radio" name="radio" value="1" checked>
+                      <label for="radio-1">Reviews and suggestions</label>
+                    </div>
+                    <div class="popup__radio-btn">
+                      <input id="radio-2" type="radio" name="radio" value="2">
+                      <label for="radio-2">Question about content</label>
+                    </div>
+                    <div class="popup__radio-btn">
+                      <input id="radio-3" type="radio" name="radio" value="3">
+                      <label for="radio-3">Complaints</label>
+                    </div>
+                    <div class="popup__radio-btn">
+                      <input id="radio-4" type="radio" name="radio" value="4">
+                      <label for="radio-4">Other</label>
+                    </div>
+                  </div>
+                  <label>
+                    <div class="popup__question-header">
+                      Describe your question
+                    </div>
+                    <textarea class="popup__question-input" name="message" placeholder="Placeholder"></textarea>
+                  </label>
+                  <div class="popup__access">
+                    <input type="checkbox" class="popup__access-checkbox" id="access" name="access" value="false">
+                    <label for="access">Даю согласие на обработку</label>
+                    <button class="popup__button-submit" type="submit">Send</button>
+                  </div>
+                </div>
+              </form>
+            </section>
+            <section class="main-tour__description">
+              <p>Welcome to Old Tallinn, the heart of the Estonian capital! <span class="main-tour__new-string"><br></span>The history of the settlement once began from here, and today it is one of the best preserved medieval cities in Europe.</p>
+              <p>I will take you through the streets and doorways and show you where they traded, what they ate, what they sued about and what our <span class="main-tour__new-string"><br></span>Estonian ancestors aspired to.</p>
+              <p>You will visit the oldest pharmacy, get acquainted with the royal privileges, see firsthand a real "gingerbread" house, look into an old tavern, walk along the widest and longest streets of the city and even find out that Tallinn is a lame city!</p>
+              <p>And you will also find beautiful and interesting souvenirs, of course!</p>
+            </section>
+          </section>
+          <section class="main-tour__image-slider image-slider">
+            <div class="image-slider__swiper swiper">
+              <div class="image-slider__wrapper swiper-wrapper">
+                <div class="image-slider__slide swiper-slide">
+                  <div class="image-slider__image">
+                    <img src="./img/old-tallin-gallery-1.png" alt="Old-tallin-galery-1">
+                  </div>
+                </div>
+                <div class="image-slider__slide swiper-slide">
+                  <div class="image-slider__image">
+                    <img src="./img/old-tallin-gallery-2.png" alt="Old-tallin-galery-2">
+                  </div>
+                </div>
+                <div class="image-slider__slide swiper-slide">
+                  <div class="image-slider__image">
+                    <img src="./img/old-tallin-gallery-3.png" alt="Old-tallin-galery-3">
+                  </div>
+                </div>
+                <div class="image-slider__slide swiper-slide">
+                  <div class="image-slider__image">
+                    <img src="./img/old-tallin-gallery-4.png" alt="Old-tallin-galery-4">
+                  </div>
+                </div>
+                <div class="image-slider__slide swiper-slide">
+                  <div class="image-slider__image">
+                    <img src="./img/old-tallin-gallery-5.png" alt="Old-tallin-galery-5">
+                  </div>
+                </div>
+                <div class="image-slider__slide swiper-slide">
+                  <div class="image-slider__image">
+                    <img src="./img/old-tallin-gallery-6.png" alt="Old-tallin-galery-6">
+                  </div>
+                </div>
+                <div class="image-slider__slide swiper-slide">
+                  <div class="image-slider__image">
+                    <img src="./img/old-tallin-gallery-7.png" alt="Old-tallin-galery-7">
+                  </div>
+                </div>
+                <div class="image-slider__slide swiper-slide">
+                  <div class="image-slider__image">
+                    <img src="./img/old-tallin-gallery-8.png" alt="Old-tallin-galery-8">
+                  </div>
+                </div>
+              </div>
+              <div class="image-slider__arrow-wrapper">
+                <div class="image-slider__arrow swiper-button-prev">
+                  <svg width="40" height="40" viewBox="0 0 40 40" transform="rotate(180)" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="20" cy="20" r="19.5" transform="rotate(-90 20 20)" fill="white" stroke="#E7717D"/>
+                    <path d="M17 14L23 20L17 26" stroke="#E7717D" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <div class="image-slider__arrow swiper-button-next">
+                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="20" cy="20" r="19.5" transform="rotate(-90 20 20)" fill="white" stroke="#E7717D"/>
+                    <path d="M17 14L23 20L17 26" stroke="#E7717D" stroke-linecap="round"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="page-tour__other-tours other-tours">
+            <h2 class="other-tours__header">Other tours</h2>
+            <section class="other-tours__tours-slider tours-slider swiper">
+              <div class="tours-slider__wrapper swiper-wrapper">
+                <div class="tours-slider__slide swiper-slide">
+                  <button class="tours-slider__like" onclick="addLike(this)">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="20" cy="20" r="20" transform="rotate(-90 20 20)" fill="white"/>
+                      <path d="M10 17.2648C10 23.1426 16 28.0407 20 30C24 28.0407 30 23.1426 30 17.2648C30 9.42772 20 8.94676 20 15.8042C20 8.94675 10 9.42772 10 17.2648Z" stroke="#E7717D"/>
+                    </svg>
+                  </button>
+                  <a class="tours-slider__link" href="#">
+                    <div class="tours-slider__image">
+                      <img src="./img/Isaac's Cathedral.png" alt="St. Isaac's Cathedral in St. Petersburg">
+                    </div>
+                    <h3 class="tours-slider__header">St. Isaac's Cathedral in St. Petersburg</h3>
+                    <p class="tours-slider__description">One of the highest domed structures in the world.</p>
+                  </a>
+                </div>
+                <div class="tours-slider__slide swiper-slide">
+                  <button class="tours-slider__like" onclick="addLike(this)">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="20" cy="20" r="20" transform="rotate(-90 20 20)" fill="white"/>
+                      <path d="M10 17.2648C10 23.1426 16 28.0407 20 30C24 28.0407 30 23.1426 30 17.2648C30 9.42772 20 8.94676 20 15.8042C20 8.94675 10 9.42772 10 17.2648Z" stroke="#E7717D"/>
+                    </svg>
+                  </button>
+                  <a class="tours-slider__link" href="#">
+                    <div class="tours-slider__image">
+                      <img src="./img/Bridge of Peace.png" alt="The Bridge of Peace, Tbilisi">
+                    </div>
+                    <h3 class="tours-slider__header">The Bridge of Peace, Tbilisi</h3>
+                    <p class="tours-slider__description">Arc-shaped pedestrian bridge made of glass and steel</p>
+                  </a>
+                </div>
+                <div class="tours-slider__slide swiper-slide">
+                  <button class="tours-slider__like" onclick="addLike(this)">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="20" cy="20" r="20" transform="rotate(-90 20 20)" fill="white"/>
+                      <path d="M10 17.2648C10 23.1426 16 28.0407 20 30C24 28.0407 30 23.1426 30 17.2648C30 9.42772 20 8.94676 20 15.8042C20 8.94675 10 9.42772 10 17.2648Z" stroke="#E7717D"/>
+                    </svg>
+                  </button>
+                  <a class="tours-slider__link" href="#">
+                    <div class="tours-slider__image">
+                      <img src="./img/Caminito del Rey.png" alt="El Caminito del Rey, Argentina">
+                    </div>
+                    <h3 class="tours-slider__header">El Caminito del Rey, Argentina</h3>
+                    <p class="tours-slider__description">Tango, Open-air Museum, Painting, Art and History</p>
+                  </a>
+                </div>
+              </div>
+              <div class="tours-slider__arrow-wrapper">
+                <div class="tours-slider__arrow swiper-button-prev">
+                  <svg width="40" height="40" viewBox="0 0 40 40" transform="rotate(180)" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="20" cy="20" r="19.5" transform="rotate(-90 20 20)" fill="white" stroke="#E7717D"/>
+                    <path d="M17 14L23 20L17 26" stroke="#E7717D" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <div class="tours-slider__arrow swiper-button-next">
+                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="20" cy="20" r="19.5" transform="rotate(-90 20 20)" fill="white" stroke="#E7717D"/>
+                    <path d="M17 14L23 20L17 26" stroke="#E7717D" stroke-linecap="round"/>
+                  </svg>
+                </div>
+              </div>
+            </section>
+          </section>
+        </section>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/script.min.js"></script>
+  </body>
+</html>

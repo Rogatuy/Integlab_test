@@ -1,0 +1,105 @@
+.image-slider {
+  margin: 47px 20px 0 20px;
+}
+
+@media (min-width: @desktop-width) {
+  .image-slider {
+    margin: 39px 128px 0 128px;
+  }
+}
+
+.image-slider__slide .swiper-slide {
+  width: 266px;
+  justify-content: center;
+}
+
+@media (min-width: @desktop-width) {
+  .image-slider__slide {
+    width: 313px;
+  }
+}
+
+.image-slider__width {
+  display: block;
+  width: 20px;
+}
+
+.image-slider__wrapper {
+  width: 266px;
+  margin-bottom: 7px;
+}
+
+@media (min-width: @desktop-width) {
+  .image-slider__wrapper {
+    margin-bottom: 0;
+  }
+}
+
+.image-slider__image {
+  text-align: start;
+  width: 266px;
+}
+
+@media (min-width: @desktop-width) {
+  .image-slider__image {
+    width: 313px;
+  }
+}
+
+.image-slider__image img {
+  max-width: 266px;
+}
+
+@media (min-width: @desktop-width) {
+  .image-slider__image img {
+    max-width: 313px;
+  }
+}
+
+.image-slider__arrow-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  display: block;
+  width: 40px;
+  height: 45px;
+  padding: 12px 17px;
+}
+
+@media (min-width: @desktop-width) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    padding: 29px 16px;
+  }
+}
+
+.swiper-button-next:hover circle,
+.swiper-button-prev:hover circle {
+  fill: @red;
+  stroke: @red;
+  cursor: pointer;
+}
+
+.swiper-button-next:hover path,
+.swiper-button-prev:hover path {
+  stroke: @white;
+}
+
+.swiper-button-disabled circle,
+.swiper-button-disabled:hover circle {
+  stroke: @light-grey;
+  fill: none;
+}
+
+.swiper-button-disabled path,
+.swiper-button-disabled:hover path {
+  stroke: @light-grey;
+}
+
+.swiper-button-lock {
+  display: none;
+}
+
